@@ -20,5 +20,5 @@ self.addEventListener('message', async ({ data: { eventName, data } }) => {
         };
     }
 
-    postMessage({ value: returnValue, hasError: false });
+    postMessage(returnValue);
 });
